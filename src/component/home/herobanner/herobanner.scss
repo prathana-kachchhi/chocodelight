@@ -1,0 +1,74 @@
+@import '../../../styles/index.scss';
+
+.herobanner {
+    .container {
+        section {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            padding: 20px;
+
+            .contant {
+                width: 800px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                padding: 40px;
+                text-align: center;
+
+                p {
+                    font-size: 40px;
+                    font-weight: 500;
+                }
+
+                span {
+                    font-size: 30px;
+                    font-weight: 500;
+
+                }
+
+                h4 {
+                    
+                    width: 680px;
+                    font-size: 20px;
+                   line-height: 36px;
+                    font-weight: 500;
+                }
+                .button{
+                    button{
+                        width: 200px;
+                        height: 50px;
+                        border-radius: 10px;
+                        background-color: var(--theme-main-background);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                        box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+                        p{
+                            font-size: 20px;
+                            font-weight: 500;
+                            color: var(--theme-white-text);
+                        }
+                    }
+                }
+            }
+
+            .video {
+                width: 320px;
+                // height: 600px;
+
+
+                video {
+                    // object-fit: cover;
+                    width: 100%;
+                    // height: 100%;
+                    border: 2px solid black;
+                    border-radius: 30px;
+                }
+            }
+        }
+    }
+}

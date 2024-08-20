@@ -1,0 +1,90 @@
+@import '../../styles/index.scss';
+
+.header {
+    width: 100%;
+    padding: 20px 0;
+    background-color: var(--theme-white-background);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+
+    .container {
+
+        header {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            gap: 20px;
+
+            .logo {
+                width: 180px;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .menubar {
+                a {
+                    display: inline-block;
+                    font-size: 18px;
+                    font-weight: 400;
+                    text-decoration: none;
+                    margin: 0 12px;
+                    text-transform: capitalize;
+                    color:var(--theme-main-text);
+
+                    &::after {
+                        content: "";
+                        display: block;
+                        width: 0;
+                        height: 2px;
+                        margin-top: 5px;
+                        background-color: var(--theme-main-background);
+                        transition: width 0.4s;
+                    }
+
+                    &:hover::after {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .icons {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                gap: 10px;
+
+                .icon-content {
+                    display: flex;
+                    align-items: center;
+                   flex-direction: column;
+                   cursor: pointer;
+
+                   .icon{
+                    font-size: 25px;
+                    color: var(--theme-main-text);
+                    margin: 0 10px;
+                    transition: .3s ease-in-out;
+                   }
+
+                    p {
+                        font-size: 12px;
+                        text-transform: capitalize;
+                        color: var(--theme-main-text);
+                    }
+                    &:hover{
+                        transform: scale(1.1);
+                        transition: .3s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}
