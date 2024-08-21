@@ -7,8 +7,8 @@ export default function Herobanner() {
       <div className="container">
         <section>
           <div className="contant">
-            <p>Choco Delights , 1984. </p>
-            <span>Fine Chocolate From Japan</span>
+            <h1>Choco Delights , 1984. </h1>
+            <h3>Fine Chocolate From Japan</h3>
             <h4>Origin Story
               ROYCE’ originated out of a singular vision - to make the world’s finest chocolate.
               It all started out in a small warehouse in Hingashi-ku, Sapporo with just four people
