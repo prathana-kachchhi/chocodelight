@@ -1,19 +1,113 @@
 @import '../../../styles//index.scss';
 
 .section2 {
-    padding: 80px;
-}
 
-.container {
-    section {
-        .bgimg {
-            background-image: url('../../../assets/images/pavel-subbotin-XIFIqyLYsoI-unsplash-scaled.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: 50% 50%;
-            width: 100%;
-            height: 100%;
+    // height: 1500px;
+    .bgimg {
+        background-color: transparent;
+        // background-image: url('../../../assets/images/sec2bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        width: 100%;
+        position: relative;
+
+        height: 100vh;
+
+        .container {
+            max-width: 1170px;
+
+            section {
+
+
+                .banner-layers {
+                    height: 500px;
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    justify-content: center;
+                    align-items: center;
+                    gap: 40px;
+
+                    .textbox {
+
+                        width: 360px;
+                        height: 300px;
+                        background-color: var(--theme-white-background);
+                        text-align: center;
+
+                        .text-center {
+                            padding: 100px 25px 80px 25px;
+
+
+                            h4 {
+                                strong {
+                                    width: 300px;
+                                    font-family: "Tenor Sans", sans-serif;
+                                    font-size: 24px;
+                                    font-weight: 400;
+                                    margin: 10px;
+                                }
+                            }
+
+                            a {
+                                p {
+                                    width: 300px;
+                                    font-size: 18px;
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
         }
     }
-}
 
+    .content {
+        padding: 100px;
+        width: 1330px;
+        background-color: #fff;
+        width: 100%;
+        text-align: center;
+
+        h3 {
+            letter-spacing: 0.5px;
+            font-size: 25px;
+            font-weight: 500;
+        }
+
+        span {
+
+            margin: 0 0 20px;
+            line-height: 26px;
+            font-size: 16px;
+            font-weight: 300;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 26px;
+
+            strong {
+                font-weight: 600;
+                cursor: pointer;
+            }
+
+        }
+    }
+
+    .bac-img {
+        background-image: url('../../../assets/images/sec2bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        width: 100%;
+        position: fixed;
+        z-index: -9;
+        height: 100vh;
+        top: 0;
+        left: 0;
+    }
+}

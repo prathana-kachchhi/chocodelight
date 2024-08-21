@@ -6,15 +6,18 @@ export default function Herobanner() {
     <div className='herobanner'>
       <div className="container">
         <section>
+
           <div className="contant">
-            <h1>Choco Delights , 1984. </h1>
-            <h3>Fine Chocolate From Japan</h3>
-            <h4>Origin Story
-              ROYCE’ originated out of a singular vision - to make the world’s finest chocolate.
-              It all started out in a small warehouse in Hingashi-ku, Sapporo with just four people
-              packing each chocolate bar by hand. The aroma of cookies baking in the small factory
-              attracted neighbours, which, in turn, led to the opening and naming of the first shop
-              as ROYCE’ Cookies.</h4>
+            <h1>Welcome to Choco Delights.</h1>
+            <h3>Fine Chocolate From India</h3>
+            <h4>
+              Choco Delights where every bite takes you on a journey to pure bliss.
+              Our chocolates are crafted to perfection, offering a delectable balance of rich
+              flavors and smooth textures. From the finest ingredients to the love poured into
+              each creation, we invite you to indulge and "Feel Sweet" with every treat. Let
+              Choco Delight be your go-to destination for a moment of happiness, one delicious
+              chocolate at a time!
+            </h4>
 
             <div className="button">
               <button>

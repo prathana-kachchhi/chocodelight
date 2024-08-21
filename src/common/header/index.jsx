@@ -4,6 +4,7 @@ import logo from '../../assets/logo/logo.webp';
 import { BiSolidSearchAlt2 } from "react-icons/bi";
 import { FaUser } from "react-icons/fa";
 import { GiShoppingBag } from "react-icons/gi";
+import { IoMenu } from "react-icons/io5";
 export default function Header() {
   return (
     <div className='header'>
@@ -26,12 +27,15 @@ export default function Header() {
               <p>search</p>
             </div>
             <div className="icon-content">
-              <FaUser className='icon profile'/>
+              <FaUser className='icon profile' />
               <p>profile</p>
             </div>
             <div className="icon-content">
-              <GiShoppingBag className='icon cart'/>
+              <GiShoppingBag className='icon cart' />
               <p>cart</p>
+            </div>
+            <div className="icon-content">
+              <IoMenu className='icon menu' />
             </div>
           </div>
         </header>

@@ -1,0 +1,23 @@
+@import '../../../styles//index.scss';
+
+.section4 {
+    background-color: white;
+    padding: 50px;
+
+    section {
+        color: black;
+
+        h1 {
+            font-size: 56px;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        h5 {
+            padding: 35px;
+            font-size: 22px;
+            text-align: center;
+            font-weight: 380;
+        }
+    }
+}
