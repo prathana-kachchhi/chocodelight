@@ -8,11 +8,11 @@ import Section4 from './section4'
 export default function Home() {
   return (
     <div>
-       {/* <Herobanner /> */}
-     <Section1 />
-      {/* <Section2 />
+      <Herobanner />
+      <Section1 />
+      <Section2 />
       <Section3 />
-      <Section4 />  */}
+      <Section4 />
     </div>
   )
 }
