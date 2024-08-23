@@ -8,7 +8,7 @@ export default function Herobanner() {
         <section>
 
           <div className="contant">
-            <h1>Welcome to Choco Delights.</h1>
+            <h1 className='animate__animated animate__fadeInDown wow' data-wow-offset="200">Welcome to Choco Delights.</h1>
             <h3>Fine Chocolate From India</h3>
             <h4>
               Choco Delights where every bite takes you on a journey to pure bliss.
@@ -20,13 +20,13 @@ export default function Herobanner() {
             </h4>
 
             <div className="button">
-              <button>
+              <button className="animate__animated animate__fadeInUp wow" data-wow-offset="200">
                 <p>Know More</p>
               </button>
             </div>
 
           </div>
-          <div className="video">
+          <div className="video animate__animated animate__fadeInRight wow" data-wow-offset="200">
             <video src={video} autoPlay loop muted playsInline ></video>
           </div>
         </section>

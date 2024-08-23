@@ -7,7 +7,7 @@ import Header from '../common/header'
 export default function DefaultLayout() {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <Outlet />
       {/* <Footer /> */}
     </div>

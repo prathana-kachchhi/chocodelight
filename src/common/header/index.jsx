@@ -34,9 +34,12 @@ export default function Header() {
               <GiShoppingBag className='icon cart' />
               <p>cart</p>
             </div>
-            <div className="icon-content">
-              <IoMenu className='icon menu' />
-            </div>
+          </div>
+          <div className="menu-icon">
+           
+            <IoMenu className='icon menu' />
+            <p>Menu</p>
+          
           </div>
         </header>
       </div>
