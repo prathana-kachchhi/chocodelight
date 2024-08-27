@@ -11,7 +11,7 @@ export default function Section1() {
                     <h2 className='animate__animated animate__fadeInDown wow' data-wow-offset="200">Our Collections</h2>
                     <p>Some things sweet, some things salty, all things indulgent - we have got something for everyone.</p>
                     <div className="collection">
-                        <div className="img className='animate__animated animate__fadeInDown     wow" data-wow-offset="200">
+                        <div className="img">
                             <div className="img1">
                                 <img src={nama} alt="1nama" /><p>Name Chocolate</p>
                             </div>

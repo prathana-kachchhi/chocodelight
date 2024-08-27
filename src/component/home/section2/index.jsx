@@ -15,7 +15,7 @@ export default function Section2() {
                       Gifts For Corporates
                     </strong>
                   </h4>
-                  <a href="">
+                  <a href="shop now">
                     <p>Shop Now</p>
                   </a>
                 </div>
