@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './header.scss';
 import logo from '../../assets/logo/logo.webp';
 import { BiSolidSearchAlt2 } from "react-icons/bi";
@@ -6,8 +6,21 @@ import { FaUser } from "react-icons/fa";
 import { GiShoppingBag } from "react-icons/gi";
 import { IoMenu } from "react-icons/io5";
 export default function Header() {
+
+  const [isNavOpen , setIsNavOpen] = useState(false);
+
+  const openNav = () => {
+    setIsNavOpen(true);
+  }
+
+  const closeNav = () => {
+    setIsNavOpen(false);
+  }
   return (
     <div className='header'>
+      <div className={`sidenav ${isNavOpen ? 'open' : ''}`}>
+        
+      </div>
       <div className="container">
         <header>
           <div className="logo">
@@ -36,11 +49,9 @@ export default function Header() {
             </div>
           </div>
           <div className="menu-icon">
+           <IoMenu className='icon menu' />
            
-            <IoMenu className='icon menu' />
-            <p>Menu</p>
-          
-          </div>
+           </div>
         </header>
       </div>
     </div>
