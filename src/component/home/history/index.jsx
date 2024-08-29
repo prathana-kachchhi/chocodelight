@@ -1,11 +1,11 @@
 import React from 'react'
-import './section3.scss';
+import './history.scss';
 import halfbg from '../../../assets/videos/section3.mp4';
 import veg from '../../../assets/images/veg.png';
 import eco from '../../../assets/images/eco.png';
 import egg from '../../../assets/images/egg.png';
 
-export default function Section3() {
+export default function History() {
   return (
     <div className='section3'>
       <section>

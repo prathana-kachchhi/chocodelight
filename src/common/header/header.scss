@@ -61,49 +61,63 @@
                 }
             }
 
-            .menubar {
-                a {
-                    display: inline-block;
-                    font-size: 18px;
-                    font-weight: 400;
-                    text-decoration: none;
-                    margin: 0 12px;
-                    text-transform: capitalize;
-                    color: var(--theme-main-text);
-
-                    &::after {
-                        content: "";
-                        display: block;
-                        width: 0;
-                        height: 2px;
-                        margin-top: 5px;
-                        background-color: var(--theme-main-background);
-                        transition: width 0.4s;
-                    }
-
-                    &:hover::after {
-                        width: 100%;
-                    }
-
-                    @media (max-width: 1160px) {
-                        font-size: 14px;
-
-                        &::after {
-                            margin-top: 3px;
-                            height: 1px;
-
+                        .menubar {
+                            display: flex;
+                            align-items: center;
+                            background-color: #fff; // Background color for the menu bar
+                            padding: 10px 20px;
+                            position: relative;
+            
+                            a {
+                                padding: 10px 15px;
+                                text-decoration: none;
+                                color: #333; // Text color for menu items
+                                position: relative;
+            
+                                &:hover {
+                                    color: #000; 
+                                   // Text color on hover
+                                }
+                            }
+            
+                            .navdropdown {
+                                display: none; // Hide dropdown initially
+                                position: absolute;
+                                background-color: #fff; // Background color for dropdown
+                                padding: 10px 0;
+                                list-style: none;
+                                transition: \ all 0.3s; // Border for dropdown
+                                top: 100%; // Position below the menu item
+                                left: 0;
+                                width: 30%;
+                                border-bottom: 1px solid #ececec;
+            
+                                li {
+                                    padding: 8px 15px;
+                                    cursor: pointer;
+                                    
+            
+                                    a {
+                                        text-decoration: none;
+                                        color: #333;
+            
+                                        &:hover {
+                                            color: #000; // Text color on hover
+                                        }
+                                    }
+            
+                                    &:hover {
+                                        background-color: #f0f0f0; 
+                                        display: block;// Background color for dropdown items on hover
+                                    }
+                                }
+                            }
+            
+                            a:hover+.navdropdown,
+                            .navdropdown:hover {
+                                display: block; // Show dropdown on hover
+                            }
                         }
-                    }
-
-                }
-
-
-
-                @media (max-width: 1024px) {
-                    font-size: 16px;
-                    display: none;
-                }
-            }
 
 
             .icons {
@@ -144,7 +158,7 @@
                             margin-left: 28px;
 
                         }
-                                                 
+
 
                         @media (max-width: 500px) {
                             display: none;
@@ -247,4 +261,42 @@
             }
         }
     }
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: var(--theme-main-background);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    height: 100vh;
+overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    z-index: 1000;
+    box-shadow: rgba(243, 243, 245, 0.25) 0px 2px 5px -1px, rgba(228, 218, 218, 0.3) 0px 1px 3px -1px;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 36px;
+}
+
+.sidenav a {
+    margin-top: 5px;
+    padding: 20px 25px;
+    text-decoration: none;
+    font-size: 20px;
+   color: var(--theme-white-text);
+    display: block;
+    transition: 0.3s ease-in-out;
+    border-radius: 10%;
+}
+
+.sidenav.open {
+    width: 250px;
 }
