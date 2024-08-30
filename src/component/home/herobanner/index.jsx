@@ -6,7 +6,6 @@ export default function Herobanner() {
     <div className='herobanner'>
       <div className="container">
         <section>
-
           <div className="contant">
             <h1 className='animate__animated animate__fadeInDown wow' data-wow-offset="200">Welcome to Choco Delights.</h1>
             <h3>Fine Chocolate From India</h3>
