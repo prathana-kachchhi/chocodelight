@@ -2,11 +2,12 @@ import { createBrowserRouter } from "react-router-dom";
 import DefaultLayout from "./defaultLayout";
 
 import Home from "../component/home";
+import Category from "./category";
 
 
 
 const router = createBrowserRouter([
-    
+
     {
         path: "/",
         element: <DefaultLayout />,
@@ -14,8 +15,10 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home />
-                    
-
+            },
+            {
+                path: "/:category",
+                element: <Category />
             }
         ]
     }

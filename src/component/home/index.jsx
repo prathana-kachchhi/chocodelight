@@ -1,7 +1,7 @@
 import React from 'react'
 import Herobanner from './herobanner'
-import Collections from './collections'
-import History from './history'
+// import Collections from './collections'
+// import History from './history'
 
 
 
@@ -12,9 +12,9 @@ export default function Home() {
   return (
     <div>
       <Herobanner />
-     <Collections />
+      {/* <Collections />
      <History />
-      <Section4 />
+      <Section4 /> */}
     </div>
   )
 }

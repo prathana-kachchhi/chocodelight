@@ -5,7 +5,8 @@ import logo from '../../assets/logo/logo.webp';
 import { BiSolidSearchAlt2 } from "react-icons/bi";
 import { FaUser } from "react-icons/fa";
 import { GiShoppingBag } from "react-icons/gi";
-import { IoMenu } from "react-icons/io5";
+import { ImMenu } from 'react-icons/im';
+import categoryApi from '../../categoryApi/categoryApi';
 export default function Header() {
 
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -14,40 +15,38 @@ export default function Header() {
     setIsNavOpen(true);
   }
 
-
   const closeNav = () => {
     setIsNavOpen(false);
   }
+
+  const menuItem = categoryApi;
   return (
     <div className='header'>
       <div className={`sidenav ${isNavOpen ? 'open' : ''}`}>
-        <Link className="closebtn" onClick={closeNav}>&times;</Link>
+        <a className="closebtn" onClick={closeNav}>&times;</a>
         <div className="menu">
-          <a href="Shop By Category">Shop By Category</a>
-          <a href="Gifting">Gifting</a>
-          <a href="Shop By Festival">Shop By Festival</a>
-          <a href="Health Friendly">Health Friendly</a>
-          <a href="Media">Media</a>
-          <a href="Shop All">Shop All</a>
+          {
+            menuItem.map((e,i) => {
+              return (
+                <Link key={i} onClick={closeNav} to={e.path}>{e.category}</Link>
+              )
+            })
+          }
         </div>
       </div>
       <div className="container">
         <header>
-          <div className="logo">
+          <Link className="logo">
             <img src={logo} alt="logo" />
-          </div>
+          </Link>
           <div className="menubar">
-            <a href="Shop By Category">Shop By Category</a>
-            <ul className='navdropdown'>
-              <li>Bars</li>
-              <li>Varities</li>
-              <li>Dessert</li>
-            </ul>
-            <a href="Gifting">Gifting</a>
-            <a href="Shop By Festival">Shop By Festival</a>
-            <a href="Health Friendly">Health Friendly</a>
-            <a href="Media">Media</a>
-            <a href="Shop All">Shop All</a>
+            {
+              menuItem.map((e,i) => {
+                return (
+                  <Link key={i} to={e.path}>{e.category}</Link>
+                )
+              })
+            }
           </div>
           <div className="icons">
             <div className="icon-content">
@@ -62,10 +61,9 @@ export default function Header() {
               <GiShoppingBag className='icon cart' />
               <p>cart</p>
             </div>
-          </div>
-          <div className="menu-icon">
-            <div onClick={openNav}>
-              <IoMenu className='icon menu' />
+            <div onClick={openNav} className="icon-content menu-icon">
+              <ImMenu className='icon' />
+              <p>menu</p>
             </div>
           </div>
         </header>
