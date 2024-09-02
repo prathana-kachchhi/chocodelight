@@ -15,8 +15,9 @@ export default function Whatsapp() {
     return (
         <div className='talk'>
             <div className="wp-icon" onClick={handleWhatsAppClick} style={{ cursor: 'pointer' }}>
-                <img src={wp} alt="WhatsApp" width={40} />
-                <a href="https://api.whatsapp.com/send/?phone=911234567890&text=Hello%2C+I+would+like+to+know+more+about+Choco+Delight%21&type=phone_number&app_absent=0">let's chat</a>
+                <a href="https://api.whatsapp.com/send/?phone=911234567890&text=Hello%2C+I+would+like+to+know+more+about+Choco+Delight%21&type=phone_number&app_absent=0">
+                    <img src={wp} alt="WhatsApp" width={40} />
+                </a>
             </div>
         </div>
     );
