@@ -8,7 +8,7 @@ export default function Collections() {
         <div className='section1'>
             <div className="container">
                 <section>
-                    <h2 className='animate__animated animate__fadeInDown wow' data-wow-offset="200">Our Collections</h2>
+                    <h2>Our Collections</h2>
                     <p>Some things sweet, some things salty, all things indulgent - we have got something for everyone.</p>
                     <div className="collection">
                         <div className="img">
