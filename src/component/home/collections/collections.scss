@@ -13,7 +13,6 @@
                 font-size: 60px;
                 font-weight: 350;
 
-
                 @media (max-width: 1024px) {
                     font-size: 48px;
                     text-align: center;
@@ -25,12 +24,12 @@
                 }
 
                 @media (max-width: 768px) {
-                    font-size: 44px;
+                    font-size: 36px;
                     text-align: center;
                 }
 
-                @media (max-width: 456px) {
-                    font-size: 28px;
+                @media (max-width: 420px) {
+                    font-size: 34px;
                     text-align: center;
                 }
             }
@@ -39,8 +38,6 @@
                 padding: 20px;
                 font-size: 24px;
                 font-weight: 500;
-
-
 
                 @media (max-width: 1024px) {
                     font-size: 22px;
@@ -62,8 +59,8 @@
                     text-align: center;
                 }
 
-                @media (max-width: 456px) {
-                    font-size: 12px;
+                @media (max-width: 420px) {
+                    font-size: 14px;
                     text-align: center;
                 }
 
@@ -134,13 +131,13 @@
                         }
 
                         @media (max-width: 576px) {
-                            width: 400px;
-                            height: 400px;
-                        }
-
-                        @media (max-width: 456px) {
                             width: 200px;
                             height: 180px;
+                        }
+
+                        @media (max-width: 420px) {
+                            width: 360px;
+                            height: 320px;
                         }
                     }
                 }
@@ -174,8 +171,8 @@
                         text-align: center;
                     }
 
-                    @media (max-width: 456px) {
-                        font-size: 12px;
+                    @media (max-width: 420px) {
+                        font-size: 28px;
                         text-align: center;
                     }
                 }
