@@ -1,22 +1,16 @@
-import React, { useEffect, useState } from 'react'
-import Loader from '.';
+import React, { useState } from 'react';
+import Loader from './index';
 
-const DelayedSuspense= ({children , delay = 2000}) => {
-    const [show , setShow] = useState(false);
+const DelayedSuspense = ({ children }) => {
+    const [isLoaded, setIsLoaded] = useState(false);
+    const handleLoad = () => {
+        setIsLoaded(true);
+    };
+    if (!isLoaded) {
+        setTimeout(handleLoad, 2000);
+    }
 
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setShow(true);
-        },delay);
-        return () => clearTimeout(timer);
-    }, [delay]);
-  return (
-    
-      <React.Suspense fallback={<Loader />}>
-      {show ? children : <Loader/>}
-      </React.Suspense>
-    
-  );
+    return isLoaded ? children : <Loader />;
 };
 
 export default DelayedSuspense;

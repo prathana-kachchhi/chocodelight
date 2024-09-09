@@ -1,0 +1,117 @@
+.chocoitem{
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 10px auto;
+    padding: 30px 45px;
+    color: #FAD298;
+    background-color: black;
+    border-radius: 50%;
+    font-size: 40px;
+
+}
+
+.chocobg {
+    margin-top: 180px;
+
+
+    .scrollbar {
+        width: 100%;
+        overflow-x: scroll;
+        display: flex;
+        gap: 42px;
+        text-align: center;
+        padding-bottom: 50px;
+
+        &::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            background-color: #F5F5F5;
+        }
+
+        &::-webkit-scrollbar {
+            width: 10px;
+            height: 2px;
+            background-color: #F5F5F5;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #000000;
+            border: 2px solid var(--theme-red-background);
+        }
+
+        .product {
+            position: relative;
+
+            .product-img {
+                width: 250px;
+                height: 300px;
+                overflow: hidden;
+                margin-bottom: 26px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    transition: 0.3s ease-in-out;
+                }
+
+            }
+
+
+
+            h3 {
+                text-align: center;
+                margin-bottom: 20px;
+                color: var(--theme-grey-color);
+            }
+
+            p {
+                text-align: center;
+                font-size: 20px;
+                color: var(--theme-red-color);
+            }
+
+            .add-to-cart {
+                position: absolute;
+                bottom: 60%;
+                left: 50%;
+                transform: translate(-50%, 60%);
+                background-color: #e8407b36;
+                border: 1px solid rgba(128, 128, 128, 0.087);
+                padding: 18px 40px;
+                width: 70%;
+
+                border-radius: 4px;
+                cursor: pointer;
+                transition: opacity 0.3s;
+
+                span {
+                    color: var(--theme-white-color);
+                    font-size: 17px;
+
+
+                }
+
+
+            }
+
+            &:hover {
+                .add-to-cart {
+                    backdrop-filter: blur(15px);
+                    transition: .3s ease-in-out;
+
+                    span {
+                        opacity: 1;
+                    }
+                }
+
+                img {
+                    transform: scale(1.1);
+                    transition: .3s ease-in-out;
+                }
+            }
+        }
+    }
+}
+}

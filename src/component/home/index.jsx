@@ -5,7 +5,7 @@ import History from './history'
 
 
 
-import Section4 from './section4'
+
 
 
 export default function Home() {
@@ -14,7 +14,6 @@ export default function Home() {
       <Herobanner />
       <Collections />
        <History />
-      {/*<Section4 /> */}
     </div>
   )
 }

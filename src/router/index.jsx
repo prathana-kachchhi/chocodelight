@@ -3,6 +3,7 @@ import DefaultLayout from "./defaultLayout";
 
 import Home from "../component/home";
 import Category from "./category";
+import DelayedSuspense from "../common/loader/DelayedSuspense/DelayedSuspense";
 
 
 
@@ -14,7 +15,12 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <Home />
+                element:( 
+                <DelayedSuspense>
+                <Home />
+                    </DelayedSuspense>
+                    ),
+
             },
             {
                 path: "/:category",

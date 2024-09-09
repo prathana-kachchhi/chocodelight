@@ -6,12 +6,14 @@ import Whatsapp from './component/home/whatsapp';
 
 
 
+
 export default function App() {
   return (
     <div>
       <RouterProvider router={router} />
       <Whatsapp />
-      {/* <Signup /> */}
+     
+    
       
     </div>
   )
