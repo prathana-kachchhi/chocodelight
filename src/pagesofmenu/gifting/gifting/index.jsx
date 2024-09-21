@@ -127,6 +127,7 @@ export default function Gifting() {
                     options={chocolateOptions}
                     selectedOption={sortitem}
                     onSelect={setsortitem}
+                    className="sort-select"
                 />
             </div>
 
