@@ -29,9 +29,9 @@
                     height: 580px;
                     display: block;
 
-                  @media (max-width: 1150px) {
-                    margin: 0 auto;
-                  }
+                    @media (max-width: 1150px) {
+                        margin: 0 auto;
+                    }
                 }
             }
 
@@ -42,19 +42,20 @@
                 gap: 20px;
                 height: 580px;
                 padding: 20px;
-                background-color: #FBECDD;
+                background-color: var(--theme-third-background);
                 color: var(--theme-main-text);
 
-               
+
 
                 .banner {
                     width: 600px;
                     padding-top: 40px;
                     text-align: center;
+
                     @media (max-width: 768px) {
-                            width: auto;
-                            height: 450px;
-                        }
+                        width: auto;
+                        height: 450px;
+                    }
 
                     span {
                         font-size: 30px;

@@ -1,3 +1,7 @@
 @import './common';
 @import './container';
 @import './theme';
+
+*::selection {
+    background-color: var(--theme-main-background);
+}

@@ -1,7 +1,18 @@
 :root {
---theme-main-background: #693017;
---theme-main-text: #693017;
---theme-main-border: #693017;
+    --theme-main-background: #693017;
+    --theme-main-text: #693017;
+    --theme-main-border: #693017;
+
+    --theme-main-light-background: #754e3d;
+    --theme-main-light-text: #754e3d;
+    --theme-main-light-border: #754e3d;
+    
+
+    --theme-secondary-background: #FBECDD;
+    --theme-secondary-text: #FBECDD;
+    --theme-secondary-border: #FBECDD;
+
+    --theme-third-background: #FBECDD;
 
     --theme-black-background: #000000;
     --theme-black-text: #000000;

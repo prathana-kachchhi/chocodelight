@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom"
+import Gifting from "../pagesofmenu/gifting/gifting";
 
 const Category = () => {
     const { category } = useParams();
@@ -9,7 +10,7 @@ const Category = () => {
             page = <h1>Shop-by-category</h1>
             break;
         case 'gifting':
-            page = <h1>Gifting</h1>
+            page = <Gifting />
             break;
         case 'shop-by-festival':
             page = <h1>Shop-by-festival</h1>
@@ -29,6 +30,6 @@ const Category = () => {
     }
 
     return page
-} 
+}
 
 export default Category;
